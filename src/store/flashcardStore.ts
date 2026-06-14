@@ -5,7 +5,7 @@ import { flashcards as seedData } from '../data/flashcards'
 
 // Promijeni ovu vrijednost kad se sjeme kartica značajno promijeni — pri
 // neslaganju verzije spremljene kartice se zamjenjuju novim sjemenom.
-const SEED_VERSION = 'geodezija-1'
+const SEED_VERSION = 'geodezija-izmjera-1'
 
 function generateId(): string {
   return `card-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`

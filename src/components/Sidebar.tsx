@@ -1,10 +1,11 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, BookOpen, ClipboardList, FileText, X } from 'lucide-react'
+import { LayoutDashboard, BookOpen, ClipboardList, FileText, Mic, X } from 'lucide-react'
 
 const navItems = [
   { label: 'Početna', to: '/', icon: LayoutDashboard },
   { label: 'Kartice', to: '/kartice', icon: BookOpen },
   { label: 'Provjera znanja', to: '/test', icon: ClipboardList },
+  { label: 'Izmjera Usmeni', to: '/izmjera', icon: Mic },
   { label: 'Čitaj PDF', to: '/pdf', icon: FileText },
 ]
 

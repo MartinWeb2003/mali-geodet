@@ -24,7 +24,7 @@ export default function Test() {
   const cards = useFlashcardStore(s => s.cards)
   const { saveScore, getScore } = useTestStore()
 
-  const groups = Array.from(new Set(cards.map(c => c.setName))).sort()
+  const groups = Array.from(new Set(cards.map(c => c.setName))).filter(g => g !== 'Izmjera').sort()
 
   const [phase, setPhase] = useState<Phase>('home')
   const [examGroup, setExamGroup] = useState('')
